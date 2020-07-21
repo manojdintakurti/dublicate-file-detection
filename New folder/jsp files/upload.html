@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload your files</title>
+   <style>
+        h1{color:peachpuff;font-size:45;font-family:Cambria;font-style:bold italic;}
+body {
+  background-image: url("uploadpic.png");
+    background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+  <form method="post" action="http://localhost:8080/fileUpload.jsp" name="upform" enctype="multipart/form-data">
+    <br><br><br><br><br>
+  <table width="60%" border="0" cellspacing="1" cellpadding="1" align="center" class="style1">
+    <tr> 
+      <td align="left"><b><h1>Select a file to upload :</h1></b><br></td>
+    </tr>
+    <tr>
+      <td align="left">
+        <input type="file" name="uploadfile" size="50">
+        </td>
+    </tr>
+    <tr>
+      <td align="left">
+  <input type="hidden" name="todo" value="upload">
+        <input type="submit" name="Submit" value="Upload">
+        <input type="reset" name="Reset" value="Cancel">
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

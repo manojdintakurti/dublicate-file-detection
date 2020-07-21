@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+body {
+  background-image: url("img/adminpic.png");
+    background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <section class="left-section">
+        <div id="left-form" class="form fade-in-element">
+            <h1>Admin Login</h1>
+            <form action="http://localhost:8080/ad.jsp" method="post">
+                <input type="text" name="Name" class="input-box" placeholder="Admin Name">
+                <input type="password" name="Password" class="input-box" placeholder="Password">
+                <input type="submit" name="login-btn" class="btn" value="Login">
+            </form>
+        </div>
+    </section>
+     <script src="js/main.js"></script>
+
+</body>
+</html>
